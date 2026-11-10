@@ -3,7 +3,6 @@
 采用 [Clarity / blog-v3](https://github.com/L33Z22L11/blog-v3) 的 Nuxt 主题，部署到 GitHub Pages。
 
 - 网站：https://ashripa.github.io/research-journal/
-- 所有初始文章都是明确标注的示例或空白模板，不是实际研究成果。
 - 已移除上游文章、个人导航、统计脚本与评论服务。使用系统字体和本站图标。
 
 ## 写作
@@ -29,6 +28,6 @@
 
 ## 许可与来源
 
-主题源码：L33Z22L11 / blog-v3，MIT 许可，保留原始 LICENSE。上游文章采用 CC BY-NC-SA 4.0，但未收录到本站。本仓库初始示例采用 CC BY-NC-SA 4.0。修改者请继续遵守相应许可。
+主题源码：L33Z22L11 / blog-v3，MIT 许可，保留原始 LICENSE。上游文章采用 CC BY-NC-SA 4.0，但未收录到本站。修改者请继续遵守相应许可。
 
 上游基准提交：5faa7c72485d1317bfd28c38b8600cd080f64fb8（主题 3.8.0）。
