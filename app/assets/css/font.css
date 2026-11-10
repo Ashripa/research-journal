@@ -1,0 +1,7 @@
+:root {
+	--font-basic: system-ui, -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif;
+	--font-serif: Georgia, "Songti SC", "SimSun", serif;
+	--font-creative: var(--font-basic);
+	--font-stroke-free: var(--font-basic);
+	--font-monospace: "Cascadia Code", Consolas, "SFMono-Regular", monospace;
+}
