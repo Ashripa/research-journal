@@ -156,7 +156,7 @@ OpenReview 支持投稿、审稿、作者回复、讨论、决策与终稿管理
 
 **CCF 推荐目录**按计算机学科领域列出推荐的国际学术会议与期刊，并使用 A、B、C 类别。2026 年发布的第七版明确，会议条目的考虑范围为 Full／Regular paper。使用时注明目录版本、学科领域、具体条目与论文类型；所在机构的成果认定规则另行核对。[^ccf]
 
-**Journal Citation Reports（JCR）**提供期刊引文指标及学科排名。使用 Journal Impact Factor（JIF）、JIF rank 或 quartile 时，应记录报告年份和学科类别；同一期刊可被归入多个学科。[^jcr]
+**Journal Citation Reports（JCR）** 提供期刊引文指标及学科排名。使用 Journal Impact Factor（JIF）、JIF rank 或 quartile 时，应记录报告年份和学科类别；同一期刊可被归入多个学科。[^jcr]
 
 **中国科学院期刊分区表**是按其自身方法形成的期刊评价体系。中国科学院文献情报中心于 2026 年 3 月 27 日声明，自 2026 年起不再更新与发布该表。引用历史分区信息时，应记录版本年份、大类或小类及 Top 等标签的具体含义。[^cas]
 
