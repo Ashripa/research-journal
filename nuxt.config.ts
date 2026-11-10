@@ -244,13 +244,14 @@ ${packageJson.homepage}
 	},
 
 	robots: {
+		robotsTxt: false,
 		disableNuxtContentIntegration: true,
 		disallow: blogConfig.article.robotsNotIndex,
 	},
 
 	site: {
 		name: blogConfig.title,
-		url: blogConfig.url,
+		url: new URL(blogConfig.url).origin,
 		defaultLocale: blogConfig.language,
 	},
 })

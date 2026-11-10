@@ -67,7 +67,6 @@ const appConfig = useAppConfig()
 	}
 }
 
-
 .header-title {
 	font-family: var(--font-basic);
 	font-size: 1.5em;

@@ -66,7 +66,7 @@ export default defineEventHandler(async (event) => {
 		$xmlns: 'http://www.w3.org/2005/Atom',
 		id: blogConfig.url,
 		title: blogConfig.title,
-		updated: runtimeConfig.public.buildTime,
+		updated: formatIsoDate(runtimeConfig.public.buildTime),
 		description: blogConfig.description, // RSS 2.0
 		author: {
 			name: blogConfig.author.name,

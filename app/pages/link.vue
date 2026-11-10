@@ -54,7 +54,6 @@ const copyFields = {
 		</p>
 	</template>
 </Tab>
-
 </template>
 
 <style scoped>
