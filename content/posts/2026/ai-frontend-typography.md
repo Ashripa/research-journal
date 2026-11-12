@@ -3,7 +3,7 @@ title: AI 生成前端的字体与排版配置
 description: 从文字呈现的常见问题出发，梳理字体、排版、布局与资源加载，建立可复用的配置和验收方案。
 date: 2026-11-12
 updated: 2026-11-12
-categories: [研究笔记]
+categories: [前端开发]
 tags: [前端, 字体, 排版, 可访问性]
 permalink: /ai-frontend-typography
 ---
