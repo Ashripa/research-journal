@@ -66,7 +66,8 @@ const showAllDate = isTimeDiffSignificant(props.date, props.updated)
 	display: flex;
 	flex-wrap: wrap;
 	gap: 0.5em clamp(1em, 5%, 1.5em);
-	font-size: 0.8em;
+	font-size: var(--text-small);
+	font-variant-numeric: tabular-nums;
 	color: var(--c-text-2);
 
 	&:empty {
@@ -79,12 +80,12 @@ const showAllDate = isTimeDiffSignificant(props.date, props.updated)
 }
 
 .article-title {
-	font-size: 1.2em;
+	font-size: var(--text-h3);
 	color: var(--c-text);
 }
 
 .article-description {
-	font-size: 0.9em;
+	font-size: var(--text-body);
 	color: var(--c-text-2);
 }
 

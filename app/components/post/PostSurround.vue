@@ -80,8 +80,8 @@ const [DefineTemplate, ReuseTemplate] = createReusableTemplate<{
 
 		> .date {
 			display: block;
-			opacity: 0.6;
-			font-size: 0.8rem;
+			font-size: var(--text-small);
+			color: var(--c-text-2);
 		}
 	}
 

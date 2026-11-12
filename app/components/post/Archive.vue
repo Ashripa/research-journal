@@ -46,11 +46,11 @@ const mainDate = computed(() => props.useUpdated ? props.updated : props.date)
 	animation: float-in 0.2s var(--delay) backwards;
 
 	@media (max-width: 768px) {
-		font-size: 0.9em;
+		font-size: var(--text-body);
 	}
 
 	.dim-hover {
-		opacity: 0.4;
+		color: var(--c-text-2);
 		transition: opacity 0.2s;
 	}
 
@@ -59,7 +59,7 @@ const mainDate = computed(() => props.useUpdated ? props.updated : props.date)
 	}
 
 	.info {
-		font-size: 0.8em;
+		font-size: var(--text-small);
 	}
 
 	&:hover,
@@ -86,11 +86,11 @@ const mainDate = computed(() => props.useUpdated ? props.updated : props.date)
 	align-items: baseline;
 	gap: 1em;
 	padding: 0.3em 0.6em;
-	white-space: nowrap;
+	white-space: normal;
 
 	> .tag-list {
 		display: flex;
-		flex-wrap: nowrap;
+		flex-wrap: wrap;
 		gap: 0.5em;
 		margin-left: auto;
 

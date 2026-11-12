@@ -90,7 +90,7 @@ withDefaults(defineProps<ButtonProps>(), {
 }
 
 .button-desc {
-	font-size: 0.75em;
+	font-size: var(--text-small);
 	text-align: center;
 	color: var(--c-text-2);
 }

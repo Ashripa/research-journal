@@ -69,33 +69,13 @@ const appConfig = useAppConfig()
 
 .header-title {
 	font-family: var(--font-basic);
-	font-size: 1.5em;
-	font-synthesis: none;
-	font-variation-settings: "wght" 600, "BEVL" 100;
-
-	> .split-char {
-		animation: 3.14s infinite alternate vf-weight, 2.72s infinite alternate vf-bevel;
-		animation-delay: var(--delay);
-		animation-play-state: paused;
-	}
+	font-size: var(--text-h2);
+	font-weight: var(--weight-heading);
 }
-
 .header-subtitle {
-	opacity: 0.5;
-	font-size: 0.75em;
+	font-size: var(--text-small);
+	color: var(--c-text-2);
 }
-
-@keyframes vf-weight {
-	0% { font-weight: 600; }
-	38.2% { font-weight: 300; }
-	100% { font-weight: 900; }
-}
-
-@keyframes vf-bevel {
-	from { font-variation-settings: "BEVL" 100; }
-	to { font-variation-settings: "BEVL" 1; }
-}
-
 .emoji-tail {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
@@ -104,6 +84,7 @@ const appConfig = useAppConfig()
 	position: absolute;
 	opacity: 0.2;
 	inset: 0;
+	font-family: var(--font-emoji);
 	font-size: 4rem;
 	transition: opacity 1s;
 	filter: blur(2px);

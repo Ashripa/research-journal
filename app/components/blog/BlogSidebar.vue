@@ -16,11 +16,11 @@ const searchStore = useSearchStore()
 	<BlogHeader class="sidebar-header" to="/" />
 
 	<nav class="sidebar-nav scrollcheck-y">
-		<div class="search-btn sidebar-nav-item gradient-card" @click="layoutStore.toggle('search')">
+		<button type="button" class="search-btn sidebar-nav-item gradient-card" @click="layoutStore.toggle('search')">
 			<Icon name="tabler:search" />
 			<span class="nav-text">{{ searchStore.label }}</span>
 			<Key class="keycut" code="K" cmd prevent @press="layoutStore.toggle('search')" />
-		</div>
+		</button>
 
 		<template v-for="(group, groupIndex) in appConfig.nav" :key="groupIndex">
 			<h3 v-if="group.title">
@@ -82,7 +82,7 @@ const searchStore = useSearchStore()
 .sidebar-nav {
 	flex-grow: 1;
 	padding: 0 5%;
-	font-size: 0.9em;
+	font-size: var(--text-body);
 
 	h3 {
 		margin: 2em 0 1em 1em;
@@ -123,7 +123,7 @@ const searchStore = useSearchStore()
 	> .nav-text {
 		flex-grow: 1;
 		overflow: hidden;
-		white-space: nowrap;
+		white-space: normal;
 		text-overflow: ellipsis;
 	}
 
@@ -134,10 +134,12 @@ const searchStore = useSearchStore()
 }
 
 .search-btn {
-	opacity: 0.5;
+	opacity: 1;
+	width: 100%;
 	margin: 1rem 0;
 	outline: 2px solid var(--c-border);
 	outline-offset: -2px;
+	text-align: start;
 	cursor: text;
 	user-select: none;
 
@@ -154,7 +156,7 @@ const searchStore = useSearchStore()
 	display: grid;
 	gap: var(--gap);
 	padding: var(--gap);
-	font-size: 0.8em;
+	font-size: var(--text-small);
 	text-align: center;
 	color: var(--c-text-2);
 }

@@ -21,8 +21,10 @@ const colorMode = useColorMode()
 <style scoped>
 .theme-toggle {
 	display: flex;
+	flex-wrap: wrap;
 	gap: 3px;
 	width: fit-content;
+	max-width: 100%;
 	margin: 0 auto;
 	padding: 2px;
 	border: 1px solid var(--c-border);

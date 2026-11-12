@@ -38,10 +38,10 @@ if (import.meta.dev) {
 
 <style scoped>
 .md-excerpt {
-	opacity: 0.6;
 	margin: 1rem 0.5rem;
 	padding: 0.5rem;
-	font-size: 0.9em;
+	font-size: var(--text-body);
+	color: var(--c-text-2);
 	transition: opacity 0.2s;
 
 	> .static {

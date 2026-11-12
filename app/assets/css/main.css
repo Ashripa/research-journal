@@ -10,17 +10,22 @@
 	--box-shadow-2: 0 0.2em 0.5em var(--ld-shadow);
 	--box-shadow-3: 0 0.5em 1em var(--ld-shadow);
 
-	overflow-wrap: break-word;
+	overflow-wrap: anywhere;
 	background-color: var(--c-bg-1);
 	font-family: sans-serif;
 	font-family: var(--font-basic);
+	font-size: 100%;
 	font-synthesis: style;
-	line-height: 1.4;
+	font-weight: var(--weight-body);
+	line-break: auto;
+	line-height: var(--leading-ui);
+	word-break: normal;
 	text-autospace: normal;
-	text-size-adjust: none;
+	text-size-adjust: auto;
 	color: var(--c-text-1);
 	scroll-padding: 2rem;
 	scrollbar-color: var(--c-text-3) transparent;
+	font-synthesis-weight: none;
 	font-variant-alternates: styleset(open-digits, disambiguation, round-quotes-and-commas);
 	-webkit-tap-highlight-color: var(--c-primary-soft);
 
@@ -152,8 +157,8 @@ img {
 	border-radius: 0.5em;
 	box-shadow: var(--box-shadow-3);
 	background-color: var(--ld-bg-card);
-	font-size: 0.8rem;
-	line-height: 1.4;
+	font-size: var(--text-small);
+	line-height: var(--leading-ui);
 	color: var(--c-text-2);
 	animation: float-in 0.2s;
 
@@ -218,4 +223,22 @@ img {
 	> .tab::before {
 		content: "⇥";
 	}
+}
+
+:where(a, button, input, textarea, select, [tabindex]):focus-visible {
+	outline: 2px solid var(--c-primary);
+	outline-offset: 3px;
+}
+:where(button, .z-button, .sidebar-nav-item) {
+	min-block-size: var(--target-size);
+	min-inline-size: var(--target-size);
+}
+h1, h2, h3, h4, h5, h6, strong, b { font-weight: var(--weight-heading); }
+time, .post-info, .post-stats { font-variant-numeric: tabular-nums; }
+.katex { text-autospace: no-autospace; }
+pre {
+	overflow-wrap: normal;
+	overflow-x: auto;
+	max-inline-size: 100%;
+	word-break: normal;
 }

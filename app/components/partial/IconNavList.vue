@@ -23,9 +23,14 @@ defineProps<{
 <style scoped>
 menu {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 
 	a {
+		display: grid;
+		place-items: center;
+		min-block-size: var(--target-size);
+		min-inline-size: var(--target-size);
 		padding: 0.5em;
 		border-radius: 2em;
 		transition: background-color 0.2s;

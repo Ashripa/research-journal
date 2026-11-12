@@ -88,7 +88,7 @@ const { copy, copied } = useCopy(shareText)
 
 	&.has-cover {
 		min-height: 16rem;
-		max-height: 20rem;
+		max-height: none;
 		color: white;
 		transition: font-size 0.2s;
 
@@ -108,9 +108,8 @@ const { copy, copied } = useCopy(shareText)
 }
 
 .operations {
-	position: absolute;
-	opacity: 0;
-	inset-inline-end: 1em;
+	position: relative;
+	opacity: 1;
 	color: var(--c-text-1);
 	transition: opacity 0.2s;
 	z-index: 1;
@@ -129,14 +128,18 @@ const { copy, copied } = useCopy(shareText)
 
 .post-title {
 	padding: 0.8em 1rem;
-	font-size: 1.6em;
-	line-height: 1.2;
+	font-size: var(--text-title);
+	line-height: var(--leading-heading);
 	z-index: 1;
 }
 
 .post-nav {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.75rem;
 	padding: 0.8em 1rem;
-	font-size: 0.8em;
+	font-size: var(--text-small);
 
 	.post-info {
 		display: flex;

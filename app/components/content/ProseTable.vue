@@ -22,11 +22,12 @@ const [scroll, toggleScroll] = useToggle(true)
 <style scoped>
 .md-table {
 	position: relative;
+	overflow-wrap: anywhere;
 	margin: 1rem 0;
+	font-size: var(--text-body);
+	line-height: var(--leading-ui);
+	word-break: normal;
 	font-variant-numeric: tabular-nums;
-	font-size: 0.9em;
-	line-height: 1.4;
-	word-break: break-all;
 
 	table.scroll {
 		contain: layout; /* KaTeX 撑开宽度 */
