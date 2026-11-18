@@ -17,10 +17,10 @@ const blogConfig = {
 	...basicConfig,
 	article: {
 		categories: {
-			研究笔记: { icon: 'tabler:notebook', color: '#7777ff' },
-			论文阅读: { icon: 'tabler:book', color: '#33aaff' },
-			实验记录: { icon: 'tabler:flask', color: '#33bbaa' },
-			阶段复盘: { icon: 'tabler:refresh', color: '#ff7733' },
+			研究笔记: { icon: 'tabler:notebook', color: 'var(--c-text-2)' },
+			论文阅读: { icon: 'tabler:book', color: 'var(--c-text-2)' },
+			实验记录: { icon: 'tabler:flask', color: 'var(--c-text-2)' },
+			阶段复盘: { icon: 'tabler:refresh', color: 'var(--c-text-2)' },
 		},
 		types: { tech: {}, story: {} },
 		order: { date: '创建日期', updated: '更新日期' },
