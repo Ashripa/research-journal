@@ -43,7 +43,7 @@ else {
 	<ContentRenderer
 		class="article"
 		data-transition-enter
-		:class="getPostTypeClassName(post?.type, { prefix: 'md' })"
+		:class="[getPostTypeClassName(post?.type, { prefix: 'md' }), { 'about-roadmap': contentPath === '/about' }]"
 		:value="post"
 		tag="article"
 	/>
@@ -58,3 +58,35 @@ else {
 	title="内容为空或页面不存在"
 />
 </template>
+
+<style scoped>
+/* Keep approved stage fills; override Mermaid’s diagram-ID color rules. */
+.about-roadmap :deep(.mermaid-diagram) {
+	--roadmap-label: #303030;
+	--roadmap-outline: #767676;
+
+	:deep(.cluster-label span),
+	:deep(.nodeLabel) {
+		color: var(--roadmap-label) !important;
+	}
+
+	:deep(.cluster-label text),
+	:deep(.node .label text) {
+		fill: var(--roadmap-label) !important;
+	}
+
+	:deep(.node rect) {
+		fill: #FFF !important;
+		stroke: var(--roadmap-outline) !important;
+	}
+
+	:deep(.flowchart-link) {
+		stroke: var(--roadmap-outline) !important;
+	}
+
+	:deep(.marker) {
+		fill: var(--roadmap-outline) !important;
+		stroke: var(--roadmap-outline) !important;
+	}
+}
+</style>
